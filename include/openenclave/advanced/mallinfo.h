@@ -31,6 +31,11 @@ typedef struct _oe_mallinfo
     size_t current_allocated_heap_size;
     /// Highest value reached by `current_allocated_heap_size` during execution.
     size_t peak_allocated_heap_size;
+
+    size_t alloc_count;
+
+    size_t remote_inflight;
+    
 } oe_mallinfo_t;
 
 /**
